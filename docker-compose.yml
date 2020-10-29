@@ -23,4 +23,5 @@ services:
       - "9001:9000"
     environment:
       ZK_HOSTS: zookeeper
-      # KAFKA_MANAGER_AUTH_ENABLED: "true"
+      KAFKA_MANAGER_AUTH_ENABLED: "true"
+      KAFKA_MANAGER_PASSWORD: "admin123"
