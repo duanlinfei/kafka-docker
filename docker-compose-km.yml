@@ -1,0 +1,12 @@
+version: '2'
+services:
+  kafka-manager:
+    image: kafkamanager/kafka-manager
+    container_name: "kafka-manager"
+    restart: always
+    ports:
+      - "9001:9000"
+    environment:
+      ZK_HOSTS: {zkHost}
+      KAFKA_MANAGER_AUTH_ENABLED: "true"
+      KAFKA_MANAGER_PASSWORD: "admin123"
